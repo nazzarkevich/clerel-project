@@ -1,0 +1,57 @@
+.wrapper {
+  background-color: #ebf0f4;
+  height: 500px;
+  & .topText {
+    text-transform: uppercase;
+    color: #3f3f3f;
+    line-height: 3.57;
+    letter-spacing: 0.7px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  & .bgImage {
+    height: 350px;
+    background-position: right;
+    background-size: 250px !important;
+    background: url('../../../assets/images/second-dot.png');
+    background-repeat: no-repeat;
+  }
+  & h2 {
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+    width: 60%;
+    color: #47c1d2;
+    font-weight: 700;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  & .bottomText {
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 1px;
+    color: #3f3f3f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  & .donateBtn {
+    border: none;
+    background: linear-gradient(225deg, #86d0da, #47c1d2 99%);
+    line-height: 1.82;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 30px;
+    width: 220px;
+    height: 45px;
+    font-size: 18px;
+    text-transform: uppercase;
+    &:hover {
+      background: #90dee8;
+    }
+  }
+  & .maskImage img {
+    width: 650px;
+    height: auto;
+  }
+}

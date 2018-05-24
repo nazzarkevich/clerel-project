@@ -1,0 +1,24 @@
+.wrapper {
+  background-color: #86d0da;
+  & .title {
+    color: #fff;
+  }
+  & .titleImage {
+    height: 350px;
+    background-position: center top;
+    background-size: 250px !important;
+    background: url('../../../assets/images/dot-third.png');
+    background-repeat: no-repeat;
+  }
+  & h1 {
+    position: relative;
+    top: 30%;
+  }
+  & p {
+    position: relative;
+    top: 30%;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+}

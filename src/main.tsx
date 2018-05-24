@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 import { createBrowserHistory } from 'history';
 import { configureStore } from 'app/store';
-import { App } from './app';
+import { Router } from './app';
 
 // prepare store
 const history = createBrowserHistory();
@@ -13,7 +13,7 @@ const store = configureStore(history);
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <App />
+      <Router />
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root')

@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Route, Switch } from 'react-router';
-import { App as TodoApp } from 'app/containers/App';
 import { hot } from 'react-hot-loader';
+import App from 'app/containers/App';
 
-export const App = hot(module)(() => (
+export const Router = hot(module)(() => (
   <Switch>
-    <Route path="/" component={TodoApp} />
+    <Route path="/" component={App} />
   </Switch>
 ));
