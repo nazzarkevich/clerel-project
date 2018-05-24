@@ -13,26 +13,23 @@
     letter-spacing: 0.7px;
     text-align: center;
   }
+  & .iconWrapper {
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 50%;
+    background: #86d0da;
+      &:hover {
+        transform: scale(1.1);
+      }
+  }
+  & i {
+    padding: 15px;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+  }
   & .social {
-    display: inline-flex;
-    list-style-type: none;
-    transition: li 4s ease-in-out;
-    & li {
-      margin-right: 10px;
-    }
-    & li:hover {
-      transform: scale(1.1);
-    }
-    & li i {
-      padding: 15px;
-      color: #fff;
-      width: 45px;
-      height: 45px;
-    }
-    & .iconWrapper {
-      border-radius: 50%;      
-      background: #86d0da;
-    }
+    margin-left: 20px;
   }
 }
 
