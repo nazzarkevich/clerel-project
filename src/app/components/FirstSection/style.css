@@ -1,0 +1,54 @@
+.title {
+  text-transform: uppercase;
+  & h2 {
+    font-size: 45px;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  & p {
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: 0.7px;
+    text-align: center;
+  }
+  & .social {
+    display: inline-flex;
+    list-style-type: none;
+    transition: li 4s ease-in-out;
+    & li {
+      margin-right: 10px;
+    }
+    & li:hover {
+      transform: scale(1.1);
+    }
+    & li i {
+      padding: 15px;
+      color: #fff;
+      width: 45px;
+      height: 45px;
+    }
+    & .iconWrapper {
+      border-radius: 50%;      
+      background: #86d0da;
+    }
+  }
+}
+
+.human {
+  max-width: 1050px;
+  height: auto;
+}
+
+.mainRow {
+  overflow: hidden;
+}
+
+.dot {
+  height: 300px;
+  width: auto;
+  background: url('../../../assets/images/section-dot.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

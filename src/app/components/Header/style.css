@@ -1,0 +1,28 @@
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.language {
+  width: 15px;
+  height: 15px;
+}
+
+.navbarDefault {
+  background-color: transparent;
+  border: none;
+  background-image: none;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.menu li a {
+  font-size: 14px;
+  color: #9f9f9f !important;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+    &:hover {
+      color: #a3dbe3 !important;
+    }
+}
+
