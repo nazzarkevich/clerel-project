@@ -1,0 +1,36 @@
+.wrapper {
+  height: 500px;
+  & .title {
+    & h1 {
+      color: #3f3f3f;
+    }
+    & .text {
+      text-transform: uppercase;
+    }
+    & .email {
+      color: #86d0da;
+    }
+  }
+  & .box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 295px;
+    height: 275px;
+    border-radius: 50px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.09);
+    color: #9f9f9f;
+    & .imageWrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & p {
+        margin-top: 15px;
+      }
+    }
+  }
+  & .box img {
+    width: 85px;
+    height: 80px;
+  }
+}

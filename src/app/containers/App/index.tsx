@@ -4,7 +4,8 @@ import {
   Header,
   FirstSection,
   SecondSection,
-  ThirdSection } from '../../components';
+  ThirdSection, 
+  FourthSection } from '../../components';
 import { Grid } from 'react-bootstrap';
 // import { connect } from 'react-redux';
 // import { bindActionCreators, Dispatch } from 'redux';
@@ -19,6 +20,7 @@ export default class App extends React.Component {
           <FirstSection />
           <SecondSection />
           <ThirdSection />
+          <FourthSection />
         </Grid>
       </div>
     );

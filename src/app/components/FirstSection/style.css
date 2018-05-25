@@ -1,35 +1,50 @@
-.title {
-  text-transform: uppercase;
-  & h2 {
-    font-size: 45px;
-    letter-spacing: 1.4px;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  & p {
-    font-size: 22px;
-    font-weight: 100;
-    letter-spacing: 0.7px;
-    text-align: center;
-  }
-  & .iconWrapper {
-    display: inline-block;
-    margin-right: 5px;
-    border-radius: 50%;
-    background: #86d0da;
-      &:hover {
-        transform: scale(1.1);
+.mainRow {
+  overflow: hidden;
+  margin-bottom: 20px;
+  height: 650px;
+  & .title {
+    text-transform: uppercase;
+    & h2 {
+      font-size: 45px;
+      letter-spacing: 1.4px;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    & p {
+      font-size: 22px;
+      font-weight: 100;
+      letter-spacing: 0.7px;
+      text-align: center;
+    }
+    & .iconWrapper {
+      display: inline-block;
+      margin-right: 5px;
+      border-radius: 50%;
+      background: #86d0da;
+        &:hover {
+          transform: scale(1.1);
+        }
+    }
+    & i {
+      padding: 15px;
+      color: #fff;
+      width: 45px;
+      height: 45px;
+    }
+    & .social {
+      margin-left: 20px;
+    }
+  
+    & .imageWrap {
+      height: 250px;
+      & img {
+        position: absolute;
+        top: -30px;
+        left: 130px;
+        height: 220px;
       }
-  }
-  & i {
-    padding: 15px;
-    color: #fff;
-    width: 45px;
-    height: 45px;
-  }
-  & .social {
-    margin-left: 20px;
+    }
   }
 }
 
@@ -38,10 +53,6 @@
   height: auto;
 }
 
-.mainRow {
-  overflow: hidden;
-  margin-bottom: 20px;
-}
 
 .dot {
   height: 300px;

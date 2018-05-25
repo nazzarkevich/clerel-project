@@ -1,6 +1,14 @@
 .wrapper {
   background-color: #ebf0f4;
-  height: 500px;
+  height: 700px;
+  & .leftSection {
+    height: 100%;
+    & .maskImage {
+      position: relative;
+      top: 20%;
+    }
+  }
+
   & .topText {
     text-transform: uppercase;
     color: #3f3f3f;
@@ -51,7 +59,27 @@
     }
   }
   & .maskImage img {
-    width: 650px;
+    width: 550px;
     height: auto;
+  }
+  & .mainRight {
+    height: 100%;
+    & .rightChild {
+      height: 100%;
+    }
+    & .rightSection {
+      position: relative;
+      top: 45%;
+      transform: perspective(1px) translateY(-50%);
+    }
+    & .imageWrap {
+      position: absolute;
+      right: 40px;
+      top: 45px;
+      & img {
+        height: 290px;
+        z-index: -1;
+      }
+    }
   }
 }
