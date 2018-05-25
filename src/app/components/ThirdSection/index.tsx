@@ -15,7 +15,7 @@ export class ThirdSection extends React.Component {
               through mining.</p>
           </div>
         </Col>
-        <Col md={8} xs={6}>
+        <Col md={8} xs={6} className={style.rightSection}>
           <div className={style.infoWrap}>
             <div className={style.free}>
               <h5>Free Donations</h5>
@@ -33,9 +33,6 @@ export class ThirdSection extends React.Component {
               <h5>Get started</h5>
               <p>Reach out to start accepting block- chain donations. 
                 We will take care of everything.</p>
-            </div>
-            <div className={style.imageWrap}>
-              <img src={require('../../../assets/images/info.png')} alt=""/>
             </div>
           </div>
         </Col>
