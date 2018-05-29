@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as style from './style.css';
+import './style.scss';
 import { 
   Header,
   FirstSection,
@@ -15,7 +15,7 @@ import { Grid } from 'react-bootstrap';
 export default class App extends React.Component {
   render() {
     return (
-      <div className={style.body}>
+      <div className="body">
         <Header />
         <Grid fluid>
           <FirstSection />

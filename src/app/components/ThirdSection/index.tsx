@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import * as style from './style.css';
+import './style.scss';
 
 export class ThirdSection extends React.Component {
   render() {
     return (
-      <Row className={style.wrapper}>
-        <Col md={4} xs={6} className={style.title}>
-          <div className={style.titleImage}>
+      <Row className="wrapperThird">
+        <Col md={4} xs={6} className="title">
+          <div className="titleImage">
             <h1>Clérel Changes Lives</h1>
             <p>Clérel’s unique donation 
               protocol allows people to use 
@@ -15,21 +15,21 @@ export class ThirdSection extends React.Component {
               through mining.</p>
           </div>
         </Col>
-        <Col md={8} xs={6} className={style.rightSection}>
-          <div className={style.infoWrap}>
-            <div className={style.free}>
+        <Col md={8} xs={6} className="rightSection">
+          <div className="infoWrap">
+            <div className="free">
               <h5>Free Donations</h5>
               <p>A donor will be able 
                 to donate by simply navigating 
                 online.</p>
             </div>
-            <div className={style.low}>
+            <div className="low">
               <h5>Low cost</h5>
               <p>Blockchain technology eliminates 
                 overhead costs &amp; processing fees associated 
                 with traditional donations.</p>
             </div>
-            <div className={style.get}>
+            <div className="get">
               <h5>Get started</h5>
               <p>Reach out to start accepting block- chain donations. 
                 We will take care of everything.</p>

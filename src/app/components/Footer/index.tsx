@@ -1,10 +1,10 @@
 import * as React from 'react';
-import * as style from './style.css';
+import './style.scss';
 
 export class Footer extends React.Component {
   render() {
     return (
-      <footer className={style.footerWrapper}>
+      <footer className="footerWrapper">
         <h2>Footer section</h2>
       </footer>
     );

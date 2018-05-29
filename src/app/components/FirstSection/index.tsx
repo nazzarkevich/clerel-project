@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { Row, Col, Image } from 'react-bootstrap';
-import './style.css';
+import './style.scss';
 import { Link } from 'react-router-dom';
 
 export class FirstSection extends React.Component {
   render() {
     return (
-      <Row className="mainRow">
-        <Col md={5} xs={6} className="title">
+      <Row className="wrapperFirst">
+        <Col md={7} xs={12} className="title">
           <Col md={12}>
             <div className="imageWrap">
               <img src={require('../../../assets/images/section-dot.png')} alt=""/>
@@ -44,7 +44,7 @@ export class FirstSection extends React.Component {
             </Col>
           </Col>
         </Col>
-        <Col md={7} xs={12}>
+        <Col md={5} xs={12}>
           <div className="humanWrap">
             <Image 
               className="human" 
