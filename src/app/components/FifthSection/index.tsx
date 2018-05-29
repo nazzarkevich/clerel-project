@@ -7,7 +7,10 @@ export class FifthSection extends React.Component {
     return (
       <Row className={style.wrapper}>
         <Col md={12}>
-          <h2>Fifth section</h2>
+        <div className={style.title}>
+          <h2>Learn more from our</h2>
+          <p>Blog</p>
+        </div>
         </Col>
       </Row>
     );

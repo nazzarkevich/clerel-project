@@ -16,6 +16,18 @@
   margin-bottom: 0;
 }
 
+.navLogo {
+  margin-left: 20px;
+}
+
+.navbarDefault > div:first-child {
+  width: 100%;
+}
+
+.navContainer {
+  width: 100%;
+}
+
 .menu li a {
   font-size: 14px;
   color: #9f9f9f !important;
