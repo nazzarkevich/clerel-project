@@ -3,17 +3,19 @@
   margin-bottom: 20px;
   height: 700px;
   .title {
-    text-transform: uppercase;
+    text-transform: uppercase; 
     h2 {
       font-size: 55px;
       letter-spacing: 1.4px;
       font-weight: 600;
       margin-bottom: 15px;
+      white-space: nowrap;
     }
     p {
       font-size: 28px;
       font-weight: 100;
       letter-spacing: 0.7px;
+      white-space: nowrap;
     }
     .iconWrapper {
       display: inline-block;
@@ -45,7 +47,10 @@
     }
   }
   .humanWrap {
-    position: relative;
+    position: relative;   
+    img {
+      transition: all 0.5s;
+    }
     .human {
       position: absolute;
       right: -220px;
@@ -101,13 +106,29 @@
 }
 @media (max-width: 992px) {
   .wrapperFirst {
-    .title{
+    .title {
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 16px;
+      }
       .imageWrap {
         height: 100px;
+      }
+      .titleWrap {
+        margin: auto;
+        width: 60%;
+      }
+      .socialWrap {
+        margin: auto;
+        width: 60%;
       }
     }
     
     .humanWrap {
+      margin: auto;
+      width: 80%;
       .human {
         position: relative;
         left: 10px;

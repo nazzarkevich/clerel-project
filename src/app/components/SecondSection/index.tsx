@@ -6,15 +6,15 @@ export class SecondSection extends React.Component {
   render() {
     return (
       <Row className="wrapperSecond">
-        <Col md={6} xs={12} className="leftSection">
+        <Col md={7} xs={12} className="leftSection">
           <div className="maskImage"> 
             <img src={require('../../../assets/images/mask.svg')} alt=""/>
           </div>
         </Col>
-        <Col md={6} xs={12} className="mainRight">
+        <Col md={5} xs={12} className="mainRight">
           <Row className="rightChild">
             <Col md={12} className="rightSection">
-              <div>
+              <div className="donationTitle">
                 <p className="topText">Introducing</p>
                 <h2>Free Donations</h2>
                 <p className="bottomText">

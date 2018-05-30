@@ -1,8 +1,9 @@
-export { Footer } from './Footer';
 export { Header } from './Header';
 export { FirstSection } from './FirstSection';
 export { SecondSection } from './SecondSection';
 export { ThirdSection } from './ThirdSection';
 export { FourthSection } from './FourthSection';
 export { FifthSection } from './FifthSection';
+export { SixSection } from './SixSection';
 export { Layout } from './Layout';
+export { Footer } from './Footer';

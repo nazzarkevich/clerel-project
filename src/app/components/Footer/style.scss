@@ -1,3 +1,16 @@
 .footerWrapper {
-  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 25px);   
+  background-color: #3f3f3f;
+  .textWrap {
+    grid-column: 6 / 8;
+    grid-row: 1 / span2;
+    text-align: center;
+    align-self: center;
+    h5 {
+      color: #b9b9b9;
+      font-size: 14px;
+    }
+  }
 }

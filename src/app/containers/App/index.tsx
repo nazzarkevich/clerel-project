@@ -6,7 +6,9 @@ import {
   SecondSection,
   ThirdSection, 
   FourthSection,
-  FifthSection } from '../../components';
+  FifthSection, 
+  SixSection, 
+  Footer } from '../../components';
 import { Grid } from 'react-bootstrap';
 // import { connect } from 'react-redux';
 // import { bindActionCreators, Dispatch } from 'redux';
@@ -23,6 +25,8 @@ export default class App extends React.Component {
           <ThirdSection />
           <FourthSection />
           <FifthSection />
+          <SixSection />
+          <Footer />
         </Grid>
       </div>
     );

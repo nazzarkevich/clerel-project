@@ -3,37 +3,39 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
   height: 500px;
-  & .leftSection {
-    grid-column: 3 / 12;
+  background: #fff;
+  .leftSection {
+    grid-column: 3 / 7;
     grid-row: 2;
-    & .title {
-      & h1 {
+    .title {
+      h1 {
         font-weight: 600;
         letter-spacing: 1.4px;
         color: #3f3f3f;
       }
-      & .text {
+      .text {
         text-transform: uppercase;
         line-height: 1.67;
         letter-spacing: 0.5px;
         color: #9f9f9f;
         font-size: 13px;
       }
-      & :last-child {
+      :last-child {
         font-weight: 600;
         & :hover {
           color: #6fc3ce;
         }
       }
-      & .email {
+      .email {
         color: #86d0da;
       }
     }
   }
-  & .rightSection {
-    grid-column: 8 / 10;
+  .rightSection {
+    grid-column: 9 / 11;
     grid-row: 2;
-    & .box {
+    justify-self: self-end;
+    .box {
       display: flex;
       justify-content: center;
       text-align: center;
@@ -42,19 +44,34 @@
       border-radius: 50px;
       box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.03);
       color: #9f9f9f;
-      & .imageWrap {
+      .imageWrap {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        & p {
+        p {
           margin-top: 15px;
         }
       }
     }
-    & .box img {
+    .box img {
       width: 65px;
       height: 60px;
     }
   }
+}
+
+@media (max-width: 991px) {
+  .wrapperFourth {
+    grid-template-rows: repeat(5, 1fr);
+    .leftSection {
+      grid-column: 3 / 11;
+      grid-row: 2;
+    }
+    .rightSection {
+      grid-column: 3 / 11;
+      grid-row: 4;
+      justify-self: self-start;
+    } 
+  }  
 }

@@ -21,26 +21,28 @@ export class FirstSection extends React.Component {
               </div>
             </Col>
             <Col md={12}>
-              <Link to="/">
-                <div className="iconWrapper">
-                  <i className="fab fa-linkedin-in fa-lg text-center"></i>
-                </div>
-              </Link>
-              <Link to="/">
-                <div className="iconWrapper">
-                  <i className="fab fa-instagram fa-lg text-center"></i>
-                </div>
-              </Link>
-              <Link to="/">
-                <div className="iconWrapper">
-                  <i className="fab fa-facebook-f fa-lg text-center"></i>
-                </div>
-              </Link>
-              <Link to="/">
-                <div className="iconWrapper">
-                  <i className="fab fa-twitter fa-lg text-center"></i>
-                </div>
-              </Link>
+              <div className="socialWrap">
+                <Link to="/">
+                  <div className="iconWrapper">
+                    <i className="fab fa-linkedin-in fa-lg text-center"></i>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="iconWrapper">
+                    <i className="fab fa-instagram fa-lg text-center"></i>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="iconWrapper">
+                    <i className="fab fa-facebook-f fa-lg text-center"></i>
+                  </div>
+                </Link>
+                <Link to="/">
+                  <div className="iconWrapper">
+                    <i className="fab fa-twitter fa-lg text-center"></i>
+                  </div>
+                </Link>
+              </div>
             </Col>
           </Col>
         </Col>
