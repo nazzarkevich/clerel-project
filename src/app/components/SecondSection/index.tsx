@@ -7,8 +7,13 @@ export class SecondSection extends React.Component {
     return (
       <Row className="wrapperSecond">
         <Col md={7} xs={12} className="leftSection">
-          <div className="maskImage"> 
-            <img src={require('../../../assets/images/mask.svg')} alt=""/>
+          <div className="maskImage">
+            <iframe id="video" width="970" height="700"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+            </iframe>
+            <div className="backMask">
+              <img src={require('../../../assets/images/mask.svg')} alt=""/>
+            </div>
           </div>
         </Col>
         <Col md={5} xs={12} className="mainRight">

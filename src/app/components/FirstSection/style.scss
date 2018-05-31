@@ -55,14 +55,14 @@
       position: absolute;
       right: -220px;
       top: 60px;
-      max-width: 1050px;
+      max-width: 1040px;
       height: auto;
       z-index: -1;
     }
   }
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1450px) {
   .wrapperFirst {
     .title {
       h2 {
@@ -81,7 +81,6 @@
       }
     }
   }
-
 }
 @media (max-width: 1200px) {
   .wrapperFirst {
@@ -137,5 +136,3 @@
     }
   }
 }
-
-

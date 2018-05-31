@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "@types/react-router-bootstrap": "^0.24.4",
+    "@types/react-youtube": "^7.4.1",
     "classnames": "^2.2.5",
     "react": "^16.3.2",
     "react-bootstrap": "^0.32.1",
@@ -60,6 +61,7 @@
     "react-router-bootstrap": "^0.24.4",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.9",
+    "react-youtube": "^7.6.0",
     "redux": "^4.0.0",
     "redux-actions": "^2.3.0",
     "sass-loader": "^7.0.1"

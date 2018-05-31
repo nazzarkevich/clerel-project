@@ -6,16 +6,16 @@ import { LinkContainer } from "react-router-bootstrap";
 export class Header extends React.Component {
   render() {
     return (
-      <Navbar className="navbarDefault">
-        <Col md={12} className="navContainer">
+      <Navbar className="navbarDefault grid navWrap">
+        <Col md={12} className="navContainer grid">
           <Navbar.Header className="navLogo">
             <Navbar.Brand>
               <Image className="logo" src={require('../../../assets/images/logo.png')} alt="company-logo"/>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight className="menu">
+          <Navbar.Collapse className="menuWrap">
+            <Nav className="menu">
               <LinkContainer to="/donate">
                 <NavItem> Donate </NavItem>
               </LinkContainer>
