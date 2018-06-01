@@ -6,26 +6,7 @@
    </rdf:RDF>
 </x:xmpmeta>
                                                                                                     
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
+                        
 <?xpacket end="w"?></metadata>
 <defs>
     <style>
@@ -35,5 +16,5 @@
       }
     </style>
   </defs>
-  <path class="cls-1" d="M50,0L0.011,48H99.989L50,0"/>
+  <path class="cls-1" d="M50,48L99.989,0H0.011L50,48"/>
 </svg>

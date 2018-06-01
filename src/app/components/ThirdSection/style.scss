@@ -1,310 +1,260 @@
 .wrapperThird {
-  height: 900px;
+  min-height: 100vh;
   background-color: #86d0da;
+  grid-template-rows: 100px 200px 200px 200px 200px 100px;
   .title {
-    height: 100%;
+    grid-column: 2 / 6;
+    grid-row: 2;
     color: #fff;
+    position: relative;
+    h1 {
+      letter-spacing: 1.4px;
+      font-weight: 600;
+      font-size: 55px;
+      white-space: nowrap;
+    }
+    p {
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
     .titleImage {
-      position: relative;
-      left: 15%;
-      height: 350px;
-      background-size: 250px !important;
-      background: url('../../../assets/images/dot-third.png');
-      background-repeat: no-repeat;
-      h1 {
-        position: relative;
-        top: 30%;
-        letter-spacing: 1.4px;
-        font-weight: 600;
-        font-size: 55px;
-        white-space: nowrap;
-      }
-      p {
-        position: relative;
-        top: 30%;
-        text-transform: uppercase;
-        font-size: 15px;
-        letter-spacing: 1px;
+      position: absolute;
+      bottom: -100px;
+      img {
+        height: 450px;
       }
     }
   }
-  .rightSection {
-    .infoWrap {
-      .free {
-        color: #fff;
-        transition: all 0.5s;
-        max-width: 300px;
-        position: absolute;
-        bottom: 85px;
-        left: 10px;
-        h4 {
-          letter-spacing: 1px;
-          font-size: 28px;
-          text-transform: uppercase;
-          white-space: nowrap;
-        }
-        p {
-          font-size: 18px;
-          letter-spacing: 0.5px;
-        }
-        .freeImgWrap {
-          display: none;
-        }
+
+  .infoWrap {
+    grid-column: 5 / 13;
+    grid-row: 3 / span 5;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 100px);
+    position: relative;
+    .free, .low, .get {
+      color: #fff;
+      transition: all 0.5s;
+      h4 {
+        letter-spacing: 1px;
+        font-size: 28px;
+        text-transform: uppercase;
+        white-space: nowrap;
       }
-      .low {
-        color: #fff;
-        max-width: 300px;
-        transition: all 0.5s;
-        position: absolute;       
-        right: 10px;
-        bottom: 200px;
-        h4 {
-          letter-spacing: 1px;
-          font-size: 28px;
-          text-transform: uppercase;
-          white-space: nowrap;
-        }
-        p {
-          font-size: 18px;
-          letter-spacing: 0.5px;
-        }
-        .lowImgWrap {
-          display: none;
-        }
+      p {
+        font-size: 18px;
+        letter-spacing: 0.5px;
       }
-      .get {
-        color: #fff;
-        max-width: 300px;
-        transition: all 0.5s;
-        position: absolute;
-        right: 350px;
-        bottom: -170px;      
-        h4 {
-          letter-spacing: 1px;
-          font-size: 28px;
-          text-transform: uppercase;
-          white-space: nowrap;
-        }
-        p {
-          font-size: 18px;
-          letter-spacing: 0.5px;
-        }
-        .getImgWrap {
-          display: none;
-        }
+      .titleFree, .titleLow, .titleGet {
+        width: 300px;
       }
+    }
+    .free {
+      grid-column: 1 / 3;
+      grid-row: 2 / span 4;
+      align-self: center;
+    }
+    .low {
+      grid-row: 2 / span 2;
+      grid-column: 6 / 9;
+      align-self: center;
+      justify-self: end;
+      margin-right: 30px;
+    }
+    .get {
+      grid-row: 6;
+      grid-column: 5 / 7;
+      align-self: center;
+    }
+    .infoImgWrap {
+      grid-column: 1 / 8;
+      grid-row: 1 / span 2;
       img {
         width: 100%;
-        position: relative;
-        top: 180px;
-        left: -100px;
       }
     }
   }
 
   .freeImgWrap, .lowImgWrap, .getImgWrap {
-    width: 50%;
-    margin: 0 auto;
+    display: none;
     img {
-      width: 500px;
-      height: auto;
+      width: 20px;
     }
   }
 }
 
-@media (max-width: 1750px) {
-  .wrapperThird {
-    .rightSection {
-      .infoWrap {
-        .free {
-          left: -40px;
-          bottom: 60px;
-          h4 {
-            font-size: 20px;
-          }
-          p {
-            font-size: 15px
-          }
-        }
-        .get {
-          bottom: -180px;
-          right: 300px;
-          h4 {
-            font-size: 20px;
-          }
-          p {
-            font-size: 15px
-          }
-        }
-        .low {
-          bottom: 150px;
-          right: 0px;
-          h4 {
-            font-size: 20px;
-          }
-          p {
-            font-size: 15px
-          }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1600px) {
+@media (max-width: 1650px) {
   .wrapperThird {
     .title {
+      h1 {
+        font-size: 45px;
+      }
+      p {
+        font-size: 14px;
+      }
       .titleImage {
-        h1 {
-          font-size: 45px;
-        }
-        p {
-          font-size: 14px;
+        bottom: -50px;
+        img{
+          height: 350px;
         }
       }
     }
-    .rightSection {
-      .infoWrap {
-        .free {
-          left: -50px;
-          bottom: 20px;
-        }
-        .get {
-          bottom: -220px;
-          right: 240px;
-        }
-        .low {
-          bottom: 100px;
-        }
-      }
-    }   
-  }
-}
-
-@media (max-width: 1450px) {
-  .wrapperThird {
-    .title {
-      .titleImage {
-        h1 {
-          font-size: 40px;
+    .infoWrap {
+      grid-column: 4 / 13;
+      .free, .low, .get {
+        .titleFree, .titleLow, .titleGet {
+          width: 270px;
+          h4 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 16px;
+          }
         }
       }
-    }
-    .rightSection {
-      .infoWrap {
-        .free {
-          left: -60px;
-          bottom: -10px;
-        }
-        .get {
-          right: 220px;
-        }
-        .low {
-          bottom: 80px;
-          right: -20px;
-        }
+      .free {
+        grid-column: 1 / 4;
+        justify-self: center;
+        margin-bottom: 30px;
+      }
+      .low {
+        margin-right: 0px;
+        margin-left: 40px;
+        justify-self: center;
+      }
+      .get {
+        grid-row: 4 / span 6;
+        margin-top: 30px;
       }
     }
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1500px) {
   .wrapperThird {
     .title {
+      grid-column: 2 / 7;      
+      h1 {
+        font-size: 37px;
+      }
       .titleImage {
-        top: -5%;
-        h1 {
-          font-size: 35px;
+        bottom: -25px;
+        left: 30px;
+        img{
+          height: 300px;
         }
       }
     }
-    .rightSection {
-      top: 20%;
-      left: -15%;
-      .infoWrap {
-        .free {
-          max-width: 280px;
-          left: -50px;
-          bottom: -40px;
-        }
-        .low {
-          bottom: 80px;
-          right: -50px;
+    .infoWrap {
+      grid-column: 4 / 13;
+      .free, .low, .get {
+        .titleFree, .titleLow, .titleGet {
+          width: 270px;
+          h4 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+          }
         }
       }
+      .free {
+        grid-column: 1 / 4;
+        grid-row: 2 / span 3;
+        justify-self: center;
+        margin: 0 20px 0 0;
+      }
+      .low {
+        // grid-row: 2 / span 2;
+        grid-row: 2;
+        grid-column: 7 / 9;
+        justify-self: normal;
+        align-self: normal;
+        margin-left: -30px;
+        margin-top: 20px;
+      }
+      .get {
+        grid-row: 3 / span 6;
+      }
     }
-  }
+  }  
 }
 
 @media (max-width: 1200px) {
   .wrapperThird {
-    .rightSection {
-      .infoWrap {
-        img {
-          display: none;
-        }
-        .titleFree {
-          width: 330px;
-          h4 {
-            font-size: 28px;
-          }
-          p {
-            font-size: 20px;
-          }
-        }
-        .freeImgWrap {
-          display: block !important;
-          img {
-          }
-        }
-        .titleLow {
-          h4 {
-            font-size: 28px;
-          }
-          p {
-            font-size: 20px;
-          }
-        }
-        .lowImgWrap {
-          display: block !important;
-          img {
-          }
-        }
-        .titleGet {
-          h4 {
-            font-size: 28px;
-          }
-          p {
-            font-size: 20px;
-          }
-        }
-        .getImgWrap {
-          display: block !important;
-          img {
-          }
-        }
-      }
+    .title {
+      grid-column: 3 / 10;
+    }
+    .infoWrap {
+      grid-column: 2 / 13;
     }
   }
- }
+}
 
 @media (max-width: 991px) {
   .wrapperThird {
     .title {
-      height: 50%;
-      .titleImage {
-        width: 60%;
-        position: static;
-        margin: auto;
-        transform: none;
-        h1 {
-          font-size: 35px;
+      grid-column: 2 / 9;
+    }
+    .infoWrap {
+      grid-column: 2 / 12;
+      .free, .low, .get {
+        .titleFree, .titleLow, .titleGet {
+          h4 {
+            font-size: 22px;
+          }
+          p {
+            font-size: 15px;
+          }
         }
       }
+      .free {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        margin: 0;
+        justify-self: normal;
+      }
+      .freeImgWrap {
+        grid-column: 4 / 9;
+        grid-row: 1 / span 4;
+      }
+      .low {
+        grid-row: 6;
+        justify-self: normal;
+        align-self: normal;
+        margin: 0;
+        grid-column: 6 / 9;
+      }
+      .lowImgWrap {
+        grid-column: 1 / 5;
+        grid-row: 5 / span 7;
+        img {
+          width: 300px
+        }
+        .titleLow {
+          text-align: right;
+        }
+      }
+      .get {
+        grid-column: 1 / 4;
+        grid-row: 12;
+        margin: 0;
+        justify-self: normal;
+        align-self: normal;
+      }
+      .getImgWrap {
+        grid-column: 5 / 9;
+        grid-row: 11 / span 6;
+      }
+      .infoImgWrap {
+        display: none;
+      }
     }
-    .rightSection {
-      .infoWrap {
-
+    .freeImgWrap, .lowImgWrap, .getImgWrap {
+      display: block;
+      img {
+        width: 450px;
       }
     }
   }

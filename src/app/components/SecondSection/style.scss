@@ -1,100 +1,86 @@
 .wrapperSecond {
+  grid-template-rows: 100px 1fr 100px;
   background-color: #ebf0f4;
-  height: 900px;
-  .leftSection {
-    height: 100%;
-    .maskImage {
-      position: relative;
-      top: 15%;
-      z-index: 2;      
-      img {
-        width: 950px;
-        height: auto;
-      }
-      #video {
-        mask: url('../../../assets/images/mask.svg');
-        -webkit-mask: url('../../../assets/images/mask.svg');
-        mask-repeat: no-repeat;
-        -webkit-mask-repeat: no-repeat;
-        -webkit-mask-size: contain;
-        mask-size: contain;
-      }
-      .backMask {
-        position: relative;
-        top: -680px;
-        left: 60px;
-        z-index: -1;
-      }
+  min-height: 100vh;
+  .maskImage {
+    grid-row: 2;
+    grid-column: 1 / 8;
+    z-index: 2;
+    position: relative;  
+    img {
+      width: 950px;
+      height: auto;
+    }
+    #video {
+      mask: url('../../../assets/images/mask.svg');
+      -webkit-mask: url('../../../assets/images/mask.svg');
+      mask-repeat: no-repeat;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      mask-size: contain;
+    }
+    .backMask {
+      position: absolute;
+      top: 30px;
+      left: 50px;
+      z-index: -1;
     }
   }
+  .rightSection {
+    grid-row: 1 / span 3;
+    grid-column: 8 / 13;
+    align-self: center;
+    position: relative;
+    .topText {
+      text-transform: uppercase;
+      color: #3f3f3f;
+      line-height: 3.57;
+      letter-spacing: 0.7px;
+      margin-bottom: 0px;
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 55px;
+      border-top: 1px solid #c0c0c0;
+      border-bottom: 1px solid #c0c0c0;
+      width: 65%;
+      color: #47c1d2;
+      font-weight: 700;
+      margin-top: 0px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      letter-spacing: 2px;
+      white-space: nowrap;
+    }
+    .bottomText {
+      font-size: 18px;
+      line-height: 1.33;
+      letter-spacing: 1px;
+      color: #3f3f3f;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      white-space: nowrap;
+    }
+    .donateBtn {
+      border: none;
+      background: linear-gradient(225deg, #86d0da, #47c1d2 99%);
+      line-height: 1.82;
+      letter-spacing: 1px;
+      color: #fff;
+      border-radius: 30px;
+      width: 220px;
+      height: 45px;
+      font-size: 18px;
+      text-transform: uppercase;
+      &:hover {
+        background: #90dee8;
+      }
+    }
 
-  .topText {
-    text-transform: uppercase;
-    color: #3f3f3f;
-    line-height: 3.57;
-    letter-spacing: 0.7px;
-    margin-bottom: 0px;
-    font-size: 28px;
-  }
-  .bgImage {
-    height: 350px;
-    background-position: right;
-    background-size: 250px !important;
-    background: url('../../../assets/images/second-dot.png');
-    background-repeat: no-repeat;
-  }
-  h2 {
-    font-size: 55px;
-    border-top: 1px solid #c0c0c0;
-    border-bottom: 1px solid #c0c0c0;
-    width: 65%;
-    color: #47c1d2;
-    font-weight: 700;
-    margin-top: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    letter-spacing: 2px;
-    white-space: nowrap;
-  }
-  .bottomText {
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 1px;
-    color: #3f3f3f;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    white-space: nowrap;
-  }
-  .donateBtn {
-    border: none;
-    background: linear-gradient(225deg, #86d0da, #47c1d2 99%);
-    line-height: 1.82;
-    letter-spacing: 1px;
-    color: #fff;
-    border-radius: 30px;
-    width: 220px;
-    height: 45px;
-    font-size: 18px;
-    text-transform: uppercase;
-    &:hover {
-      background: #90dee8;
-    }
-  }
-
-  .mainRight {
-    height: 100%;
-    .rightChild {
-      height: 100%;
-    }
-    .rightSection {
-      position: relative;
-      top: 45%;
-      transform: perspective(1px) translateY(-50%);
-    }
     .imageWrap {
       position: absolute;
-      right: 40px;
-      top: 45px;
+      top: 0px;
+      right: 0px;
       img {
         height: 450px;
         z-index: -1;
@@ -103,33 +89,27 @@
   }
 }
 
-@media (max-width: 1650px) {
+@media (max-width: 1700px) {
   .wrapperSecond {
-    .leftSection {
-      .maskImage {
-        top: 20%;
-        img {
-          width: 750px;
-        }
-        #video {
-          max-width: 780px;
+    .maskImage {
+      img {
+        width: 750px;
+      }
+      #video {
+        max-width: 780px;
 
-        }
       }
     }
-    .topText {
-      font-size: 25px
-    }
-
-    h2 {
-      font-size: 45px;
-    }
-
-    .bottomText {
-      font-size: 15px;
-    }
-
-    .mainRight {
+    .rightSection {
+      .topText {
+        font-size: 25px
+      }
+      h2 {
+        font-size: 45px;
+      }
+      .bottomText {
+        font-size: 15px;
+      }
       .imageWrap {
         img {
           height: 350px;
@@ -139,41 +119,33 @@
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1400px) {
   .wrapperSecond {
-    .leftSection {
-      .maskImage {
+    .maskImage {
+      img {
+        width: 550px;
+      }
+      #video {
+        max-width: 700px;
+        height: 500px;
+      }
+      .backMask {
         img {
-          width: 550px;
-        }
-        #video {
-          max-width: 700px;
-          height: 500px;
-        }
-        .backMask {
-          top: -470px;
-          left: 60px;
-          img {
-            width: 670px;
-          }
+          width: 670px;
         }
       }
     }
-    .topText {
-      font-size: 20px
-    }
-
-    h2 {
-      font-size: 32px;
-    }
-
-    .bottomText {
-      font-size: 13px;
-    }
-
-    .mainRight {
+    .rightSection {
+      .topText {
+        font-size: 20px
+      }
+      h2 {
+        font-size: 32px;
+      }
+      .bottomText {
+        font-size: 13px;
+      }
       .imageWrap {
-        right: -20px;
         img {
           height: 280px;
         }
@@ -190,21 +162,17 @@
 
 @media (max-width: 1250px) {
   .wrapperSecond {
-    .leftSection {
-      .maskImage {
+    .maskImage {
+      img {
+        width: 550px;
+      }
+      #video {
+        max-width: 550px;
+        height: 380px;
+      }
+      .backMask {
         img {
-          width: 550px;
-        }
-        #video {
-          max-width: 550px;
-          height: 380px;
-        }
-        .backMask {
-          top: -370px;
-          left: 30px;
-          img {
-            width: 540px;
-          }
+          width: 520px;
         }
       }
     }
@@ -213,12 +181,16 @@
 
 @media (max-width: 991px) {
   .wrapperSecond {
-    display: flex;
-    flex-direction: column-reverse;
-
+    grid-template-rows: 100px 1fr 1fr 100px;
+    .maskImage {
+      grid-row: 3;
+    }
+    .rightSection {
+      grid-row: 1 / span 2;
+      grid-column: 1 / 13;
+      justify-self: center;
+    }
     .mainRight {
-      height: 50%;
-      top: 10%;
       .donationTitle {
         margin: auto;
         width: 60%;

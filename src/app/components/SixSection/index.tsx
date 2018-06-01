@@ -7,7 +7,6 @@ export class SixSection extends React.Component {
     return (
       <Row className="wrapperSix">
         <div className="topImage">
-          <img src={require('../../../assets/images/tri-shape-2.svg')} alt=""/>
         </div>
         <div className="youtube">
           <img src={require('../../../assets/images/icons/icon-youtube.png')} alt=""/>

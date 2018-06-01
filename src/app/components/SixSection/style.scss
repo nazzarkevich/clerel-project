@@ -6,6 +6,9 @@
   .topImage {
     grid-column: 1 / 13;
     grid-row: 1;
+    background-image: url('../../../assets/images/shape-grey.svg');
+    background-repeat: repeat-x;
+    background-size: 40px auto;
   }
   .youtube, .medium, .twitter, .telegram {
     grid-row: 2;
@@ -26,5 +29,35 @@
   }
   .telegram {
     grid-column: 9 / 11;    
+  }
+}
+
+@media (max-width: 1500px) {
+  .wrapperSix {
+    .youtube, .medium, .twitter, .telegram {
+      img {
+        width: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapperSix {
+    .youtube, .medium, .twitter, .telegram {
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapperSix {
+    .youtube, .medium, .twitter, .telegram {
+      img {
+        width: 100px;
+      }
+    }
   }
 }

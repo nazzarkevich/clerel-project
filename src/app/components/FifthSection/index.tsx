@@ -7,7 +7,7 @@ export class FifthSection extends React.Component {
     return (
       <Row className="wrapperFifth">
         <div className="topImage">
-          <img src={require('../../../assets/images/shape-grey.svg')} alt=""/>
+
         </div>
         <div className="title">
           <h2>Learn more from our</h2>
