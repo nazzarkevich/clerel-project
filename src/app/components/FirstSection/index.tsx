@@ -1,12 +1,13 @@
 import * as React from 'react';
-import { Row, Image } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 import './style.scss';
 import { Link } from 'react-router-dom';
 
 export class FirstSection extends React.Component {
   render() {
     return (
-      <Row className="wrapperFirst grid">
+      <Row className="wrapperFirst">
+        <Col xs={12} sm={12} md={5}>
           <div className="titleWrap">
             <div className="imageWrap">
               <img src={require('../../../assets/images/section-dot.png')} alt=""/>
@@ -36,15 +37,14 @@ export class FirstSection extends React.Component {
               </Link>
             </div>
           </div>
-          <div className="humanImgWrap">
-            <div className="humanWrap">
-              <Image 
-                className="human" 
-                src={require('../../../assets/images/human-red-blue.png')} 
-                alt=""
-              />
-            </div>
-          </div>
+        </Col>
+        <Col xs={12} sm={12} md={7}>
+          <Image 
+            className="human" 
+            src={require('../../../assets/images/human-red-blue.png')} 
+            alt=""
+          />
+        </Col>
       </Row>
     );
   }
