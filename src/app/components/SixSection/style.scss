@@ -1,34 +1,22 @@
 .wrapperSix {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   background-color: #86d0da;
   .topImage {
-    grid-column: 1 / 13;
-    grid-row: 1;
     background-image: url('../../../assets/images/shape-grey.svg');
     background-repeat: repeat-x;
     background-size: 40px auto;
+    height: 20px;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-height: 110px;
+    align-items: center;
   }
   .youtube, .medium, .twitter, .telegram {
-    grid-row: 2;
-    align-self: center;
-    justify-self: center;
     img {
       width: 170px;
     }
-  }
-  .youtube {
-    grid-column: 3 / 5;
-  }
-  .medium {
-    grid-column: 5 / 7;
-  }
-  .twitter {
-    grid-column: 7 / 9;    
-  }
-  .telegram {
-    grid-column: 9 / 11;    
   }
 }
 

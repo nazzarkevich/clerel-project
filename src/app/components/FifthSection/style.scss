@@ -1,20 +1,13 @@
 .wrapperFifth {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10, 1fr);
   min-height: 100vh;
   .topImage {
-    grid-column: 1 / 13;
-    grid-row: 1;
     background-image: url('../../../assets/images/shape-grey-down.svg');
     background-repeat: repeat-x;
     background-size: 40px auto;
+    height: 20px;
   }
   .title {
-    grid-column: 6 / 8;
-    grid-row: 2;
     white-space: nowrap;
-    justify-self: center;
     h2 {
       font-size: 24px;
       text-align: center;
@@ -24,21 +17,15 @@
       margin-bottom: 18px;
       margin-top: 0;
     }
-    p {
+    .blog {
+      display: block;
       font-size: 55px;
       text-align: center;
       letter-spacing: 1.4px;
-      .blog {
-        color: #47c1d2;
-      }
+      color: #47c1d2;
     }
   }
   .feedback {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: 1 / 13;
-    grid-row: 4 / span 6;
-    align-self: center;
     .imgWrap {
       margin-left: 15px;
       position: absolute;
@@ -51,17 +38,11 @@
     }
     .box {
       position: relative;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      grid-column: 5 / 11;
       width: 890px;
       height: 390px;
       border: 2px solid #47c1d2;
       border-radius: 20px;
       .boxTitle {
-        grid-column: 3 / 6;
-        grid-row: 2 / span 4;
         h4 {
           width: 350px;
           font-size: 28px;
@@ -102,7 +83,7 @@
     }
     .feedback {
       .box {
-        grid-column: 4 / 11;
+
       }
     }
   }  

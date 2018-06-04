@@ -6,7 +6,7 @@ export class FourthSection extends React.Component {
   render() {
     return (
       <Row className="wrapperFourth">
-        <Col className="leftSection">
+        <Col xs={12} sm={12} md={7} className="leftSection">
           <div className="title">
             <h1>Get involved</h1>
             <p className="text">Any non profit organization should 
@@ -17,7 +17,7 @@ export class FourthSection extends React.Component {
              discuss preliminary partnerships</p>
           </div>
         </Col>
-        <Col className="rightSection">
+        <Col xs={12} sm={12} md={5} className="rightSection">
           <div className="box">
             <div className="imageWrap">
               <img src={require('../../../assets/images/star.png')} alt=""/>
