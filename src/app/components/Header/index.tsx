@@ -22,9 +22,17 @@ export class Header extends React.Component {
               <LinkContainer to="/blog">
                 <NavItem> Blog </NavItem>
               </LinkContainer>
-              <LinkContainer to="/language">
+              {/* <LinkContainer to="/language">
                 <NavItem> English </NavItem>
-              </LinkContainer>
+              </LinkContainer> */}
+              <NavItem>
+                <div className="suctomSelect">
+                  <select id="styleSelect">
+                    <option value="english">English</option>
+                    <option value="portuguese">Portuguese</option>
+                  </select>
+                </div>
+              </NavItem>
             </Nav>
           </Navbar.Collapse>
         </Col>

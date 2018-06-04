@@ -45,7 +45,7 @@ export class ThirdSection extends React.Component {
           <div className="get">
             <div className="titleGet">
               <h4>Get started</h4>
-              <p>Reach out to start accepting block- chain donations. 
+              <p>Reach out to start accepting blockchain donations. 
                 We will take care of everything.</p>
             </div>
           </div>
