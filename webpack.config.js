@@ -47,7 +47,6 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            "style-loader",
             "css-loader",
             "sass-loader"
             // {
