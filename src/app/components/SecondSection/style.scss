@@ -196,3 +196,29 @@
     }
   }
 }
+
+@media (max-width: 1100px) {
+  .wrapperSecond {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    .videoSection {
+      align-self: flex-start;
+      .maskImage {
+  
+      }
+    }
+    .rightWrap {
+      width: 70%;
+      align-self: flex-end;
+      .rightSection {
+        .donationTitle {
+          margin: auto;
+          width: 80%;
+          h2 {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
