@@ -66,6 +66,8 @@
 
 @media (max-width: 991px) {
   .wrapperFourth {
+    flex-direction: column;
+    justify-content: space-evenly;
     .leftSection {
     }
     .rightSection {

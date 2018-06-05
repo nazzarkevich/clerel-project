@@ -1,9 +1,26 @@
 import * as React from 'react';
 import './style.scss';
-import { Nav, NavItem, Navbar, Image, Col } from 'react-bootstrap';
+import { Nav,
+  NavItem,
+  Navbar,
+  Image,
+  Col,
+  ButtonToolbar,
+  
+   } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 
-export class Header extends React.Component {
+interface Props {};
+interface State {
+  dropDownItems: Array<any>;
+  active: number
+}
+
+export class Header extends React.Component<Props, State> {
+
+  renderMenuItems() {
+    
+  }
   render() {
     return (
       <Navbar className="navbarDefault grid navWrap">
@@ -17,21 +34,15 @@ export class Header extends React.Component {
           <Navbar.Collapse className="menuWrap">
             <Nav className="menu">
               <LinkContainer to="/donate">
-                <NavItem> Donate </NavItem>
+                <NavItem> DONATE </NavItem>
               </LinkContainer>
               <LinkContainer to="/blog">
-                <NavItem> Blog </NavItem>
+                <NavItem> BLOG </NavItem>
               </LinkContainer>
-              {/* <LinkContainer to="/language">
-                <NavItem> English </NavItem>
-              </LinkContainer> */}
               <NavItem>
-                <div className="suctomSelect">
-                  <select id="styleSelect">
-                    <option value="english">English</option>
-                    <option value="portuguese">Portuguese</option>
-                  </select>
-                </div>
+              <ButtonToolbar>
+
+              </ButtonToolbar>
               </NavItem>
             </Nav>
           </Navbar.Collapse>
