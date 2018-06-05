@@ -7,7 +7,7 @@ export class FirstSection extends React.Component {
   render() {
     return (
       <Row className="wrapperFirst">
-        <Col xs={6} sm={6} md={5}>
+        <Col xs={6} sm={6} md={5} className="leftSection">
           <div className="titleWrap">
             <div className="imageWrap">
               <img src={require('../../../assets/images/section-dot.png')} alt=""/>
@@ -38,7 +38,7 @@ export class FirstSection extends React.Component {
             </div>
           </div>
         </Col>
-        <Col xs={8} sm={8} md={7}>
+        <Col xs={8} sm={8} md={7} className="rightSection">
           <Image 
             className="human" 
             src={require('../../../assets/images/human-red-blue.png')} 
