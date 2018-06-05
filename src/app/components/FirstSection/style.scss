@@ -102,9 +102,20 @@
 }
 @media (max-width: 1200px) {
   .wrapperFirst {
+    .titleWrap {
+      .imageWrap {
+        img {
+          height: 150px;
+          left: -240px;
+          bottom: 210px;
+        }
+      }
+    }
     flex-direction: column;
+    justify-content: space-evenly;
       .human {
         max-height: 380px;
+        left: -40px;
       }
   }
 }
