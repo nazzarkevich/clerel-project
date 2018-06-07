@@ -82,6 +82,15 @@
       width: 20px;
     }
   }
+
+  #corner-image {
+    grid-row: 6;
+    grid-column: 1 / 5;
+    align-self: self-end;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: 1650px) {

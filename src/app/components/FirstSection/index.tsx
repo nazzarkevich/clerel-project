@@ -22,7 +22,7 @@ export class FirstSection extends React.Component {
               </Link>
               <Link to="/">
                 <div className="iconWrapper">
-                  <i className="fab fa-instagram fa-lg text-center"></i>
+                  <i className="fab fa-instagram fa-lg text-center"></i>             
                 </div>
               </Link>
               <Link to="/">

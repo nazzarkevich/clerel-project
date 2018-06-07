@@ -23,11 +23,16 @@
       color: #9f9f9f;
     }
     .socialWrap {
+      a {
+        display: inline-block;
+        margin-right: 18px;
+      }
       .iconWrapper {
         display: inline-block;
         margin-right: 5px;
         border-radius: 50%;
         background: #86d0da;
+        cursor: pointer;
           :hover {
             transform: scale(1.1);
           }

@@ -53,6 +53,9 @@ export class ThirdSection extends React.Component {
             <img src={require('../../../assets/images/mobile_3.png')} alt=""/>
           </div>
         </div>
+        <div id="corner-image">
+          <img src="../../../assets/images/rect-bottom.png" alt="corner-image"/>
+        </div>
       </Row>
     );
   }
