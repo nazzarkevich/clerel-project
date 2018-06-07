@@ -87,9 +87,17 @@
     grid-row: 6;
     grid-column: 1 / 5;
     align-self: self-end;
+    clip-path: polygon(0 30%, 0% 100%, 76% 100%);
+    background: #fff;
     img {
       width: 100%;
     }
+  }
+  #corner {
+    grid-row: 6;
+    grid-column: 1 / 5;
+    align-self: self-end;
+    width: 78%;
   }
 }
 
@@ -278,6 +286,16 @@
       img {
         width: 450px;
       }
+    }
+    #corner-image {
+      grid-row: 7;
+      margin-bottom: -1px;
+      img {
+
+      }
+    }
+    #corner {
+      grid-row: 7;
     }
   }
 }

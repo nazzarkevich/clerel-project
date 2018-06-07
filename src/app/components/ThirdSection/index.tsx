@@ -56,6 +56,7 @@ export class ThirdSection extends React.Component {
         <div id="corner-image">
           <img src="../../../assets/images/rect-bottom.png" alt="corner-image"/>
         </div>
+          <img id="corner" src="../../../assets/images/rect-bottom.png" alt="corner-image"/>
       </Row>
     );
   }
