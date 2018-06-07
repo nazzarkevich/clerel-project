@@ -12,3 +12,11 @@
     }
   }
 }
+
+@media screen and (max-width: 420px) {
+  .footerWrapper {
+    .textWrap {
+      min-height: 50px;
+    }
+  }
+}

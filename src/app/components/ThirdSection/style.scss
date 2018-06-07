@@ -15,7 +15,7 @@
     }
     p {
       text-transform: uppercase;
-      font-size: 15px;
+      font-size: 14px;
       letter-spacing: 1px;
     }
     .titleImage {
@@ -84,7 +84,7 @@
   }
 }
 
-@media (max-width: 1650px) {
+@media screen and (max-width: 1650px) {
   .wrapperThird {
     .title {
       h1 {
@@ -131,7 +131,7 @@
   }
 }
 
-@media (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
   .wrapperThird {
     .title {
       grid-column: 2 / 7;      
@@ -181,7 +181,7 @@
   }  
 }
 
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
   .wrapperThird {
     .title {
       grid-column: 3 / 10;
@@ -192,7 +192,7 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
   .wrapperThird {
     .title {
       grid-column: 2 / 9;
@@ -219,7 +219,7 @@
         }
       }
       .freeImgWrap {
-        grid-column: 4 / 9;
+        grid-column: 5 / 9;
         grid-row: 1 / span 4;
         img {
           width: 400px;
@@ -230,7 +230,7 @@
         justify-self: normal;
         align-self: normal;
         margin: 0;
-        grid-column: 5 / 8;
+        grid-column: 6 / 9;
         .titleLow {
           width: 310px;
         }
@@ -268,6 +268,117 @@
       display: block;
       img {
         width: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .wrapperThird {
+    .title {
+      grid-column: 1 / 13;
+      grid-row: 1 / span 2;
+      align-self: center;
+      padding: 0px 20px 0px 20px;
+      h1 {
+        font-size: 31px;
+      }
+    }
+    .infoWrap {
+      grid-column: 1 / 13;
+      .free, .low, .get {
+        .titleFree, .titleLow, .titleGet {
+          text-align: center;
+          margin: 0;
+          width: auto;
+          padding: 0px 5px 0px 5px;
+          h4 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .free {
+        grid-column: 1 / 9;
+        .titleFree {
+        }
+      }
+      .freeImgWrap {
+        grid-column: 1 / 9;
+        grid-row: 3 / span 4;
+        img {
+          min-width: 300px;
+        }
+      }
+      .low {
+        grid-row: 7;
+        align-self: center;
+        grid-column: 1 / 9;
+        .titleLow {
+          min-width: 310px;
+        }
+      }
+      .lowImgWrap {
+        grid-column: 2 / 8;
+        grid-row: 8 / span 5;
+        img {
+          width: 290px
+        }
+        .titleLow {
+        }
+      }
+      .get {
+        grid-column: 1 / 9;
+        grid-row: 15;
+        margin: 0;
+        .titleGet {
+          min-width: 290px;
+        }
+      }
+      .getImgWrap {
+        grid-column: 1 / 9;
+        grid-row: 16 / span 4;
+        img {
+          max-width: 400px;
+        }
+      }
+      .infoImgWrap {
+        display: none;
+      }
+    }
+    .freeImgWrap, .lowImgWrap, .getImgWrap {
+      display: block;
+      img {
+        width: 450px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wrapperThird {
+    .title {
+      h1 {
+        font-size: 31px;
+        white-space: normal;
+        margin-bottom: 20px;
+      }
+    }
+    .infoWrap {
+      .freeImgWrap {
+        img {
+          max-width: 300px;
+        }
+      }
+      .getImgWrap {
+        img {
+          max-width: 350px;
+        }
+      }
+      .infoImgWrap {
+        display: none;
       }
     }
   }

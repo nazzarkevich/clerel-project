@@ -10,7 +10,7 @@
   .social {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     min-height: 110px;
     align-items: center;
   }
@@ -46,6 +46,21 @@
     .youtube, .medium, .twitter, .telegram {
       img {
         width: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .wrapperSix {
+    min-height: 200px;
+    .social {
+      min-height: 70px;
+      align-items: flex-end;
+    }
+    .youtube, .medium, .twitter, .telegram {
+      img {
+        width: 110px;
       }
     }
   }

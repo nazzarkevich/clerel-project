@@ -14,7 +14,7 @@ export class FifthSection extends React.Component {
               <span className="blog">Blog</span>
             </div>
           </Col>
-          <Col xs={12} sm={6} md={6}>
+          <Col xs={12} sm={6} md={6} className="feedbackWrap">
             <div className="feedback">
               <div className="box">
                 <div className="imgWrap">

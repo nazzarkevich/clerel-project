@@ -6,8 +6,8 @@ import { Nav,
   Image,
   Col,
   ButtonToolbar,
-  
-   } from 'react-bootstrap';
+  MenuItem,
+  DropdownButton } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 
 interface Props {};
@@ -18,10 +18,32 @@ interface State {
 
 export class Header extends React.Component<Props, State> {
 
-  renderMenuItems() {
-    
+  componentWillMount() {
+    this.setState({
+      dropDownItems: [
+        {title: 'Enlish', id: 1},
+        {title: 'Portuguese', id: 2}
+      ],
+      active: 1
+    });
   }
+
+  renderMenuItems() {
+    return this.state.dropDownItems.map((item, index) => ( 
+        <MenuItem key={item.id} active={item.id == this.state.active} onClick={() => this.setState({active: item.id})}>
+          { item.title }
+        </MenuItem>
+      ));
+  }
+
   render() {
+
+    let title = "Langs";
+    let current = this.state.dropDownItems.find(i => i.id == this.state.active);
+    if(current) {
+      title = current.title;
+    }
+
     return (
       <Navbar className="navbarDefault grid navWrap">
         <Col md={12} className="navContainer grid">
@@ -39,11 +61,13 @@ export class Header extends React.Component<Props, State> {
               <LinkContainer to="/blog">
                 <NavItem> BLOG </NavItem>
               </LinkContainer>
-              <NavItem>
               <ButtonToolbar>
-
+                <DropdownButton
+                  title={title}
+                  id='lang-dropdown'>
+                    {this.renderMenuItems()}
+                </DropdownButton>
               </ButtonToolbar>
-              </NavItem>
             </Nav>
           </Navbar.Collapse>
         </Col>

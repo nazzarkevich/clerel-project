@@ -47,7 +47,6 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            "style-loader",
             "css-loader",
             "sass-loader"
             // {
@@ -77,6 +76,13 @@ module.exports = {
           ]
         })
       },
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: 'css-loader'
+        })
+    },
       // static assets
       { test: /\.html$/, use: 'html-loader' },
       { test: /\.(png|svg)$/, use: 'url-loader?limit=10000' },
@@ -102,7 +108,7 @@ module.exports = {
   },
   plugins: [
     new webpack.EnvironmentPlugin({
-      NODE_ENV: 'production', // use 'development' unless process.env.NODE_ENV is defined
+      NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
       DEBUG: false
     }),
     new WebpackCleanupPlugin(),
