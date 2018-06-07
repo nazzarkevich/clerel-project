@@ -5,9 +5,10 @@ import { Nav,
   Navbar,
   Image,
   Col,
-  ButtonToolbar,
+  // ButtonToolbar,
   MenuItem,
-  DropdownButton } from 'react-bootstrap';
+  // DropdownButton,
+  NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 
 interface Props {};
@@ -21,7 +22,7 @@ export class Header extends React.Component<Props, State> {
   componentWillMount() {
     this.setState({
       dropDownItems: [
-        {title: 'Enlish', id: 1},
+        {title: 'English', id: 1},
         {title: 'Portuguese', id: 2}
       ],
       active: 1
@@ -29,20 +30,20 @@ export class Header extends React.Component<Props, State> {
   }
 
   renderMenuItems() {
-    return this.state.dropDownItems.map((item, index) => ( 
-        <MenuItem key={item.id} active={item.id == this.state.active} onClick={() => this.setState({active: item.id})}>
-          { item.title }
+    return this.state.dropDownItems.map((item, index) => (
+      index + 1 !== this.state.active 
+      ?  <MenuItem key={item.id} active={item.id == this.state.active} onClick={() => this.setState({active: item.id})}>
+          <img src={`../../../assets/images/${item.title}.png`} alt="language-icon"/> { item.title }
         </MenuItem>
-      ));
+      : ''
+    ));
   }
 
   render() {
 
     let title = "Langs";
     let current = this.state.dropDownItems.find(i => i.id == this.state.active);
-    if(current) {
-      title = current.title;
-    }
+    current ? title = current.title : title = 'Langs';
 
     return (
       <Navbar className="navbarDefault grid navWrap">
@@ -60,14 +61,10 @@ export class Header extends React.Component<Props, State> {
               </LinkContainer>
               <LinkContainer to="/blog">
                 <NavItem> BLOG </NavItem>
-              </LinkContainer>
-              <ButtonToolbar>
-                <DropdownButton
-                  title={title}
-                  id='lang-dropdown'>
-                    {this.renderMenuItems()}
-                </DropdownButton>
-              </ButtonToolbar>
+              </LinkContainer>           
+              <NavDropdown title={title} id="language-dropdown">
+                {this.renderMenuItems()}
+              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Col>
