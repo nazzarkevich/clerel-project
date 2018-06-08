@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Carousel } from 'react-bootstrap';
 import './style.scss';
 
 export class FifthSection extends React.Component {
@@ -14,21 +14,59 @@ export class FifthSection extends React.Component {
               <span className="blog">Blog</span>
             </div>
           </Col>
-          <Col xs={12} sm={6} md={6} className="feedbackWrap">
-            <div className="feedback">
-              <div className="box">
-                <div className="imgWrap">
-                  <img src={require('../../../assets/images/people.png')} alt=""/>
+          <Carousel className="slider">
+            <Carousel.Item>
+              <Col xs={12} sm={6} md={6} className="feedbackWrap">
+                <div className="feedback">
+                  <div className="box">
+                    <div className="imgWrap">
+                      <img src={require('../../../assets/images/people.png')} alt=""/>
+                    </div>
+                    <div className="boxTitle">
+                      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris 
+                        faucibus vel arcu et ultricies. In hac habitasse platea dictumst...</p>
+                      <button className="btn">read more</button>
+                    </div>
+                  </div>
                 </div>
-                <div className="boxTitle">
-                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris 
-                    faucibus vel arcu et ultricies. In hac habitasse platea dictumst...</p>
-                  <button className="btn">read more</button>
+              </Col>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Col xs={12} sm={6} md={6} className="feedbackWrap">
+                <div className="feedback">
+                  <div className="box">
+                    <div className="imgWrap">
+                      <img src={require('../../../assets/images/people.png')} alt=""/>
+                    </div>
+                    <div className="boxTitle">
+                      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris 
+                        faucibus vel arcu et ultricies. In hac habitasse platea dictumst...</p>
+                      <button className="btn">read more</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </Col>
+              </Col>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Col xs={12} sm={6} md={6} className="feedbackWrap">
+                <div className="feedback">
+                  <div className="box">
+                    <div className="imgWrap">
+                      <img src={require('../../../assets/images/people.png')} alt=""/>
+                    </div>
+                    <div className="boxTitle">
+                      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris 
+                        faucibus vel arcu et ultricies. In hac habitasse platea dictumst...</p>
+                      <button className="btn">read more</button>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+            </Carousel.Item>
+          </Carousel>
         </Row>
       </Row>
     );
